@@ -11,6 +11,8 @@ body {
     font-family: 'Merriweather Sans', 'Roboto', sans-serif;
 }
 
+/* PRIMEIRA SEÇÃO  */
+
 .sobre {
     width: 400px;
     padding: 40px;
@@ -77,16 +79,21 @@ body {
 }
 
 .tecnologia {
-    display: flex;
     background: #302F3D;
     border-radius: 20px;
     padding: 30px 20px;
 }
 
-.tecnologia-item {
+.tecnologia-conteudo {
     display: flex;
     flex-wrap: wrap;
-    max-width: max-content;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tecnologia-item {
+    text-align: center;
+    width: 80px;
     font-weight: 700;
     background: #CB92B1;
     color: #000000;
@@ -94,8 +101,9 @@ body {
     border-radius: 30px;
     justify-items: center;
     list-style: none;
-    padding: 0 6px;
-    margin-left: 10px;
+    padding: 3px 6px;
+    white-space: nowrap; /* evita a quebra de linha */
+    font-size: 10px;
 }
 
 .tecnologia h2 {
@@ -142,4 +150,36 @@ body {
 .experiencia-item li,
 .educacao-item li {
     padding-bottom: 20px;
+}
+
+/* SEGUNDA SEÇÃO */
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #302F3D;
+    width: 1000px;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.destaques {
+    
 }
