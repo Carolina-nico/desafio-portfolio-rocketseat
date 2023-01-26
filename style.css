@@ -35,7 +35,8 @@ body {
 .experiencia,
 .educacao,
 .destaques,
-header {
+header,
+.posts>div {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     margin-bottom: 30px;
 }
@@ -167,11 +168,11 @@ header {
     display: grid;
     grid-template-columns: 3fr 9fr;
     grid-template-areas:
-    "sobre projetos projetos"
-    "sobre posts posts";
+    "sobre main main"
+    "footer footer footer";
 }
 
-header {
+header, .posts>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,8 +193,8 @@ header span {
     font-weight: 400;
 }
 
-.projetos {
-    grid-area: projetos;
+main {
+    grid-area: main;
 }
 
 .projetos>div {
@@ -231,6 +232,12 @@ header span {
     padding-right: 5px;
 }
 
-.posts {
-    grid-area: posts;
+/* TERCEIRA SEÇÃO */
+
+.posts>div {
+    margin-top: 0px;
+}
+
+footer {
+    grid-area: footer;
 }
