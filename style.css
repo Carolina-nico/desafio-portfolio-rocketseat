@@ -53,10 +53,10 @@ header,
 .sobre-perfil img {
     display: grid;
     justify-self: center;
-    width: 128px;
-    height: 120px;
+    width: 130px;
+    height: 125px;
     border-radius: 50%;
-    border: 2px solid #00FF00;
+    border: 3px solid #00FF00;
     margin-bottom: 30px;
 }
 
@@ -112,7 +112,8 @@ header,
     justify-items: center;
     list-style: none;
     padding: 3px 6px;
-    white-space: nowrap; /* evita a quebra de linha */
+    white-space: nowrap;
+    /* evita a quebra de linha */
     font-size: 10px;
 }
 
@@ -168,11 +169,12 @@ header,
     display: grid;
     grid-template-columns: 3fr 9fr;
     grid-template-areas:
-    "sobre main main"
-    "footer footer footer";
+        "sobre main main"
+        "footer footer footer";
 }
 
-header, .posts>div {
+header,
+.posts>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,10 +202,10 @@ main {
 .projetos>div {
     display: flex;
     justify-content: space-between;
-    gap: 30px; 
+    gap: 30px;
 }
 
-.destaques{
+.destaques {
     width: 50%;
     background: #302F3D;
     border-radius: 20px;
@@ -232,12 +234,70 @@ main {
     padding-right: 5px;
 }
 
+.destaques div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaques div strong {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.destaques strong::before {
+    content: '';
+    background: #E7DE79;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #837E9F;
+}
+
+
 /* TERCEIRA SEÇÃO */
 
 .posts>div {
     margin-top: 0px;
+    justify-content: start;
+}
+
+.posts img {
+    /* display: grid; */
+    justify-self: center;
+    width: 130px;
+    height: 125px;
+    border-radius: 50%;
+    /* border: 2px solid #00FF00; */
+    margin-right: 20px;
+}
+
+.share h3 {
+    padding-bottom: 10px;
+}
+
+.share p {
+    padding: 30px 0 10px 0;
+}
+
+.share ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share li {
+    font-size: 14px;
+
 }
 
 footer {
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
